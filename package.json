@@ -1,0 +1,35 @@
+{
+  "name": "@cc/cc-nodejs-sdk",
+  "version": "1.0.0",
+  "description": "Node JS SDK for CommandCenter",
+  "main": "routes/initializer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zoho/cc-nodejs-sdk"
+  },
+  "keywords": [
+    "Node",
+    "Zoho",
+    "CRM",
+    "OAuth2",
+    "API",
+    "CC"
+  ],
+  "author": "CommandCenter Team (commandcenter-team@zohocorp.com)",
+  "dependencies": {
+    "form-data": "^3.0.0",
+    "got": "^11.2.0",
+    "mysql": "^2.18.1",
+    "tunnel": "0.0.6",
+    "winston": "^3.2.1",
+    "date": "^1.0.2",
+    "string-format": "^2.0.0",
+    "utils": "^0.3.1"
+  },
+  "devDependencies": {
+  },
+  "homepage": "https://github.com/zoho/cc-nodejs-sdk#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
