@@ -65,7 +65,7 @@ class ParameterMap {
 		}
 
 		const paramStr = paramName.toString();
-		if(paramStr.toLowerCase() !== "zgid" && paramStr.toLowerCase() !== "processname" && paramStr.toLowerCase() !== "statename" && paramStr.toLowerCase() !== "digest" && paramStr.toLowerCase() !== "identifier1" && paramStr.toLowerCase() !== "identifier2" && paramStr.toLowerCase() !== "identifier3" && paramStr.toLowerCase() !== "identifier4" && paramStr.toLowerCase() !== "identifier5") {
+		if(paramStr.toLowerCase() !== "digestkey" && paramStr.toLowerCase() !== "processname" && paramStr.toLowerCase() !== "statename" && paramStr.toLowerCase() !== "digest" && paramStr.toLowerCase() !== "identifier1" && paramStr.toLowerCase() !== "identifier2" && paramStr.toLowerCase() !== "identifier3" && paramStr.toLowerCase() !== "identifier4" && paramStr.toLowerCase() !== "identifier5") {
 			parsedParamValue = parsedParamValue + "::" + paramClassName;
 		}
 

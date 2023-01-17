@@ -27,7 +27,7 @@ class ApiTriggerOperations{
 			case "statename":
 				stateNameCount = stateNameCount + 1;
 				break;
-			case "zgid":
+			case "digestkey":
 				zgIdCount = zgIdCount + 1;
 				break;
 			case "identifier1":
@@ -88,7 +88,7 @@ class GetAPITriggerParam{
 //	static DIGEST = new Param("digest", "com.zoho.crm.ApiTrigger.GetAPITriggerParam");
 	static PROCESSNAME = new Param("processName", "com.zoho.crm.ApiTrigger.GetAPITriggerParam");
 	static STATENAME = new Param("stateName", "com.zoho.crm.ApiTrigger.GetAPITriggerParam");
-	static ZGID = new Param("zgid", "com.zoho.crm.ApiTrigger.GetAPITriggerParam");
+	static DIGESTKEY = new Param("digestkey", "com.zoho.crm.ApiTrigger.GetAPITriggerParam");
 	static IDENTIFIER1 = new Param("identifier1", "com.zoho.crm.ApiTrigger.GetAPITriggerParam");
 	static IDENTIFIER2 = new Param("identifier2", "com.zoho.crm.ApiTrigger.GetAPITriggerParam");
 	static IDENTIFIER3 = new Param("identifier3", "com.zoho.crm.ApiTrigger.GetAPITriggerParam");
