@@ -151,14 +151,14 @@ All other exceptions such as SDK anomalies and other unexpected behaviours are t
 ```js
 const fs = require("fs");
 const path = require("path");
-const InitializeBuilder = require("sdk/routes/initialize_builder").InitializeBuilder;
-const USDataCenter = require("sdk/routes/dc/us_data_center").USDataCenter;
-const SDKConfigBuilder = require("sdk/routes/sdk_config_builder").SDKConfigBuilder;
-const HeaderMap = require("sdk/routes/header_map").HeaderMap;
-const ParameterMap = require("sdk/routes/parameter_map").ParameterMap;
-const Param = require("sdk/routes/param").Param;
-const ApiTriggerOperations = require("sdk/core/com/zoho/crm/api_trigger/api_trigger_operations").ApiTriggerOperations;
-const GetAPITriggerParam = require("sdk/core/com/zoho/crm/api_trigger/api_trigger_operations").GetAPITriggerParam;
+const InitializeBuilder = require("@cc/cc-nodejs-sdk/routes/initialize_builder").InitializeBuilder;
+const USDataCenter = require("@cc/cc-nodejs-sdk/routes/dc/us_data_center").USDataCenter;
+const SDKConfigBuilder = require("@cc/cc-nodejs-sdk/routes/sdk_config_builder").SDKConfigBuilder;
+const HeaderMap = require("@cc/cc-nodejs-sdk/routes/header_map").HeaderMap;
+const ParameterMap = require("@cc/cc-nodejs-sdk/routes/parameter_map").ParameterMap;
+const Param = require("@cc/cc-nodejs-sdk/routes/param").Param;
+const ApiTriggerOperations = require("@cc/cc-nodejs-sdk/core/com/zoho/crm/api_trigger/api_trigger_operations").ApiTriggerOperations;
+const GetAPITriggerParam = require("@cc/cc-nodejs-sdk/core/com/zoho/crm/api_trigger/api_trigger_operations").GetAPITriggerParam;
 class Initializer {
 
     static async initialize() {
