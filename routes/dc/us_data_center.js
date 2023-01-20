@@ -7,10 +7,6 @@ class USDataCenter extends DataCenter {
 
 	static _PRODUCTION;
 
-	static _SANDBOX;
-
-	static _DEVELOPER;
-
 	static US = new USDataCenter();
 
 	/**
@@ -19,35 +15,10 @@ class USDataCenter extends DataCenter {
 	 */
 	static PRODUCTION() {
 		if (this._PRODUCTION == null) {
-			this._PRODUCTION = DataCenter.setEnvironment("https://karthi-pt3768.csez.zohocorpin.com:9178", this.US.getIAMUrl(), this.US.getFileUploadUrl(), "us_prd");
-//			this._PRODUCTION = DataCenter.setEnvironment("https://crm27.automation.localzoho.com", this.US.getIAMUrl(), this.US.getFileUploadUrl(), "us_prd");
+			this._PRODUCTION = DataCenter.setEnvironment("https://crm.zohopublic.com", this.US.getIAMUrl(), this.US.getFileUploadUrl(), "us_prd");
 		}
 
 		return this._PRODUCTION;
-	}
-
-	/**
-	 * This method represents the Zoho Sandbox environment in US domain
-	 * @returns {Environment} An instance of Environment
-	 */
-	static SANDBOX() {
-		if (this._SANDBOX == null) {
-			this._SANDBOX = DataCenter.setEnvironment("https://sandbox.zohoapis.com", this.US.getIAMUrl(), this.US.getFileUploadUrl(), "us_sdb");
-		}
-
-		return this._SANDBOX;
-	}
-
-	/**
-	 * This method represents the Zoho Developer environment in US domain
-	 * @returns {Environment} An instance of Environment
-	 */
-	static DEVELOPER() {
-		if (this._DEVELOPER == null) {
-			this._DEVELOPER = DataCenter.setEnvironment("https://developer.zohoapis.com", this.US.getIAMUrl(), this.US.getFileUploadUrl(), "us_dev");
-		}
-
-		return this._DEVELOPER;
 	}
 
 	getIAMUrl() {

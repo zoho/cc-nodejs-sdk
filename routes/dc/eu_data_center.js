@@ -8,10 +8,6 @@ class EUDataCenter extends DataCenter {
 
 	static _PRODUCTION;
 
-	static _SANDBOX;
-
-	static _DEVELOPER;
-
 	static EU = new EUDataCenter();
 
 	/**
@@ -24,30 +20,6 @@ class EUDataCenter extends DataCenter {
 		}
 
 		return this._PRODUCTION;
-	};
-
-	/**
-	 *  This method represents the Zoho Sandbox environment in EU domain
-	 * @returns {Environment} An instance of Environment
-	 */
-	static SANDBOX() {
-		if (this._SANDBOX == null) {
-			this._SANDBOX = DataCenter.setEnvironment("https://sandbox.zohoapis.eu", this.EU.getIAMUrl(), this.EU.getFileUploadUrl(), "eu_sdb");
-		}
-
-		return this._SANDBOX;
-	};
-
-	/**
-	 * This method represents the Zoho Developer environment in EU domain
-	 * @returns {Environment} An instance of Environment
-	 */
-	static DEVELOPER() {
-		if (this._DEVELOPER == null) {
-			this._DEVELOPER = DataCenter.setEnvironment("https://developer.zohoapis.eu", this.EU.getIAMUrl(), this.EU.getFileUploadUrl(), "eu_dev");
-		}
-
-		return this._DEVELOPER;
 	};
 
 	getIAMUrl() {

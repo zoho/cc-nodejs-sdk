@@ -8,10 +8,6 @@ class INDataCenter extends DataCenter {
 
 	static _PRODUCTION;
 
-	static _SANDBOX;
-
-	static _DEVELOPER;
-
 	static IN = new INDataCenter();
 
 	/**
@@ -24,30 +20,6 @@ class INDataCenter extends DataCenter {
 		}
 
 		return this._PRODUCTION;
-	};
-
-	/**
-	 * This method represents the Zoho Sandbox environment in IN domain
-	 * @returns {Environment} An instance of Environment
-	 */
-	static SANDBOX() {
-		if (this._SANDBOX == null) {
-			this._SANDBOX = DataCenter.setEnvironment("https://sandbox.zohoapis.in", this.IN.getIAMUrl(), this.IN.getFileUploadUrl(), "in_sdb");
-		}
-
-		return this._SANDBOX;
-	};
-
-	/**
-	 * This method represents the Zoho Developer environment in IN domain
-	 * @returns {Environment} An instance of Environment
-	 */
-	static DEVELOPER() {
-		if (this._DEVELOPER == null) {
-			this._DEVELOPER = DataCenter.setEnvironment("https://developer.zohoapis.in", this.IN.getIAMUrl(), this.IN.getFileUploadUrl(), "in_dev");
-		}
-
-		return this._DEVELOPER;
 	};
 
 	getIAMUrl() {
