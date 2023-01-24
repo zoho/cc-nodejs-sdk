@@ -45,6 +45,10 @@ class ParameterMap {
 		} else if(!(Object.prototype.toString.call(value) == "[object Number]") && !(Object.prototype.toString.call(value) == "[object String]") && !(Object.prototype.toString.call(value) == "[object Boolean]") && !(Object.prototype.toString.call(value) == "[object Date]")) {
 		 	throw new SDKException(Constants.INVALID_DATA_TYPE, paramName + ", Please use the proper datatypes");
 		}
+		
+		if(Object.prototype.toString.call(value) == "[object Number]" && value.toString().length > 9) {
+			throw new SDKException("Invalid data", paramName + ", value should not exceed 9 digits for Integer");
+		}
 
 		var paramClassName = param.getClassName();
 
