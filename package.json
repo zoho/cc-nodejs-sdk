@@ -1,5 +1,5 @@
 {
-  "name": "@cc/cc-nodejs-sdk",
+  "name": "cc-nodejs-sdk",
   "version": "1.0.0",
   "description": "Node JS SDK for CommandCenter",
   "main": "routes/initializer",

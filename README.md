@@ -51,9 +51,9 @@ You can include the SDK to your project using:
     - Run the command below:
 
     ```sh
-    npm install @cc/cc-nodejs-sdk
+    npm install cc-nodejs-sdk
     ```
-- The NodeJS SDK will be installed and a package named **@cc/cc-nodejs-sdk** will be created in the local machine.
+- The NodeJS SDK will be installed and a package named **-sdk** will be created in the local machine.
 
 - Another method to install the SDK
     - Add dependencies to the package.json of the node server with the latest version (recommended)
@@ -68,9 +68,9 @@ Before you get started with creating your NodeJS application, you need to create
 - Configure API environment which decides the domain and the URL to make API calls.
 
     ```js
-    const USDataCenter = require( "@cc/cc-nodejs-sdk/routes/dc/us_data_center").USDataCenter;
+    const USDataCenter = require( "cc-nodejs-sdk/routes/dc/us_data_center").USDataCenter;
 
-    const EUDataCenter = require( "@cc/cc-nodejs-sdk/routes/dc/eu_data_center").EUDataCenter;
+    const EUDataCenter = require( "cc-nodejs-sdk/routes/dc/eu_data_center").EUDataCenter;
     /*
      * Configure the environment
      * which is of the pattern Domain.Environment
@@ -84,7 +84,7 @@ Before you get started with creating your NodeJS application, you need to create
 - Create an instance of **SDKConfig** containing the SDK configuration.
 
     ```js
-    const SDKConfigBuilder = require("@cc/cc-nodejs-sdk/routes/sdk_config_builder").SDKConfigBuilder;
+    const SDKConfigBuilder = require("cc-nodejs-sdk/routes/sdk_config_builder").SDKConfigBuilder;
 
     /*
      * By default, the SDK creates the SDKConfig instance
@@ -97,9 +97,9 @@ Before you get started with creating your NodeJS application, you need to create
 Initialize the SDK using the following code.
 
 ```js
-const InitializeBuilder = require("@cc/cc-nodejs-sdk/routes/initialize_builder").InitializeBuilder;
-const USDataCenter = require("@cc/cc-nodejs-sdk/routes/dc/us_data_center").USDataCenter;
-const SDKConfigBuilder = require("@cc/cc-nodejs-sdk/routes/sdk_config_builder").SDKConfigBuilder;
+const InitializeBuilder = require("cc-nodejs-sdk/routes/initialize_builder").InitializeBuilder;
+const USDataCenter = require("cc-nodejs-sdk/routes/dc/us_data_center").USDataCenter;
+const SDKConfigBuilder = require("cc-nodejs-sdk/routes/sdk_config_builder").SDKConfigBuilder;
 
 class Initializer {
 
@@ -151,14 +151,14 @@ All other exceptions such as SDK anomalies and other unexpected behaviours are t
 ```js
 const fs = require("fs");
 const path = require("path");
-const InitializeBuilder = require("@cc/cc-nodejs-sdk/routes/initialize_builder").InitializeBuilder;
-const USDataCenter = require("@cc/cc-nodejs-sdk/routes/dc/us_data_center").USDataCenter;
-const SDKConfigBuilder = require("@cc/cc-nodejs-sdk/routes/sdk_config_builder").SDKConfigBuilder;
-const HeaderMap = require("@cc/cc-nodejs-sdk/routes/header_map").HeaderMap;
-const ParameterMap = require("@cc/cc-nodejs-sdk/routes/parameter_map").ParameterMap;
-const Param = require("@cc/cc-nodejs-sdk/routes/param").Param;
-const ApiTriggerOperations = require("@cc/cc-nodejs-sdk/core/com/zoho/crm/api_trigger/api_trigger_operations").ApiTriggerOperations;
-const GetAPITriggerParam = require("@cc/cc-nodejs-sdk/core/com/zoho/crm/api_trigger/api_trigger_operations").GetAPITriggerParam;
+const InitializeBuilder = require("cc-nodejs-sdk/routes/initialize_builder").InitializeBuilder;
+const USDataCenter = require("cc-nodejs-sdk/routes/dc/us_data_center").USDataCenter;
+const SDKConfigBuilder = require("cc-nodejs-sdk/routes/sdk_config_builder").SDKConfigBuilder;
+const HeaderMap = require("cc-nodejs-sdk/routes/header_map").HeaderMap;
+const ParameterMap = require("cc-nodejs-sdk/routes/parameter_map").ParameterMap;
+const Param = require("cc-nodejs-sdk/routes/param").Param;
+const ApiTriggerOperations = require("cc-nodejs-sdk/core/com/zoho/crm/api_trigger/api_trigger_operations").ApiTriggerOperations;
+const GetAPITriggerParam = require("cc-nodejs-sdk/core/com/zoho/crm/api_trigger/api_trigger_operations").GetAPITriggerParam;
 class Initializer {
 
     static async initialize() {
