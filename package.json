@@ -1,6 +1,6 @@
 {
   "name": "cc-nodejs-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node JS SDK for CommandCenter",
   "main": "routes/initializer",
   "repository": {
@@ -26,8 +26,7 @@
     "string-format": "^2.0.0",
     "utils": "^0.3.1"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "homepage": "https://github.com/zoho/cc-nodejs-sdk#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
