@@ -269,7 +269,7 @@ class CommonAPIHandler {
 			let isLimitExceeded = limitDetail["is_limit_exahusted"];
 			var isJSONUpdated = false;
 			if(!isLimitExceeded || !limitDetail["api_enable_time"] || limitDetail["api_enable_time"] <= Date.now()) {
-				connector.headers.set(Constants.ZOHO_SDK, os.platform() + "/" + os.release() + "/nodejs-2.1/" + process.version + ":" + Constants.SDK_VERSION);
+				connector.headers.set(Constants.ZOHO_SDK, os.platform() + "/" + os.release() + "/cc-nodejs-sdk/" + process.version + ":" + Constants.SDK_VERSION);
 
 				let response = await connector.fireRequest(converterInstance);
 	
