@@ -1,6 +1,6 @@
 {
   "name": "cc-nodejs-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node JS SDK for CommandCenter",
   "main": "routes/initializer",
   "repository": {
